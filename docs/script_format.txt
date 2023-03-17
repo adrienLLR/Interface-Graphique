@@ -1,0 +1,34 @@
+# <script> are made of <commands>, <empty_lines> and <comment_lines>
+#
+# The <line_separator> is the "newline" (\n) character. Don't use files
+#     with "return" (\r) characters, tell your editor to use the unix standard.
+#     The <line_separator> can be escaped by a preceding \ character. In that case
+#     the \n is only considered as a <word> separator, and a <command> can span
+#     several lines.
+#
+# <empty_lines> only have space or tabs followed by a <line_sepatator>.
+#
+# <comment_lines> may have any number of space or tab before a #. Everything after the # is
+#     ignored until the next <line_separator>.
+#     <line_separators> can not be escaped in <comment_lines>.
+#
+# <commands> are script lines that are split into <words>.
+#     <words> are separated by any number of space ( ) and/or tab (\t) characters.
+#     The first <word> of a <command> is the <command_name>.
+#     The remaining <words> of a <command> are used as the <command> arguments.
+#
+# <command_name> can be "frame", "button", "toplevel" or "place".
+#
+# <words> may contain spaces, tabs, and newline by enclosing them in curly braces { }.
+#
+# <widget_commands> have 2 mandatory arguments: the name of the widget that is created,
+#     and the name of its parent widget. The name root can be used to refer to the root
+#     widget of the application.
+#     The other arguments of <widget_commands> define the <options> of the widget.
+#
+# <option> are a group of three <words>: the <option_name>, the equal (=) character,
+#     and the <option_value>.
+#
+# <option_name> is the parameter name in the widget configure function (see "ei_widget.h").
+#
+# <option_values> are interpreted differently depending on the <option_name>.

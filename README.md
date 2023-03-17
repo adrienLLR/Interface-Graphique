@@ -6,9 +6,9 @@ Projet réalisé à l'ENSIMAG. L'objectif étant de permettre à un utilisateur 
 
 Pour compiler ce projet, allez dans le dossier cmake qui sert de dossier tampon et faites : 
 
-cmake ..
-make [INSEREZ LE FICHIER TEST QUE VOUS VOULEZ]
-cd ..
-./cmake/[INSEREZ LE FICHIER TEST QUE VOUS VOULEZ]
-
+cmake .. <br>
+make [INSEREZ LE FICHIER TEST QUE VOUS VOULEZ] <br>
+cd .. <br>
+./cmake/[INSEREZ LE FICHIER TEST QUE VOUS VOULEZ] <br>
+ 
 Les fichiers de tests sont dans le répertoire test.

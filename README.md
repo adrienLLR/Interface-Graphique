@@ -12,3 +12,5 @@ cd .. <br>
 ./cmake/[INSEREZ LE FICHIER TEST QUE VOUS VOULEZ] <br>
  
 Les fichiers de tests sont dans le répertoire test.
+
+![](img/illustration.gif)
